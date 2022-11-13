@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: mood-portal
   description: Mood portal
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=mood-portal'
 spec:
   type: service
   lifecycle: integration
